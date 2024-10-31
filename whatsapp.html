@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WhatsApp | Secure and Reliable Free Private Messeging and Calling
+    </title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1iNEAhFjtpAOIgxrnXOpXWBETEbtT3Dicg&s"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #fcf5eb;
+        font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial,
+          sans-serif;
+        font-weight: 400;
+      }
+      .con-1 {
+        width: 100%;
+        height: 80px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        background-color: #fcf5eb;
+        background-color: #fcf5ebc6;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(44, 44, 44);
+      }
+      .con-1-2 {
+        display: flex;
+        gap: 38px;
+      }
+      .con-1-3 a {
+        background-color: #25d366;
+        padding: 16px 25px;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+      .empty {
+        width: 100%;
+        height: 120px;
+      }
+      .con-2 {
+        width: 96%;
+        height: 750px;
+        margin: auto;
+        background-image: url("https://scontent.whatsapp.net/v/t39.8562-34/316546300_547692113846445_7299710494491288098_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=rRQkTm86qb8Q7kNvgGM_vwS&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AnlI4k1egiOrX03dQ6cQjRR&oh=01_Q5AaIESgnjuvhWC_UfWJRBZWx-LZQv__mxmEf2pUhLBEe5Ee&oe=671A99E5");
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con-2-1 {
+        width: 1200px;
+        height: 600px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-2-1-left {
+        width: 320px;
+        height: 380px;
+        color: white;
+      }
+      .con-2-1-left h1 {
+        font-size: 75px;
+        font-weight: 500;
+        margin: 0;
+      }
+      .con-2-1-left p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .con-2-1-left-1 {
+        margin-top: 70px;
+      }
+      .con-2-1-left a {
+        background-color: #25d366;
+        padding: 16px 25px;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+      .con-2-1-right {
+        position: relative;
+        width: 500px;
+        height: 590px;
+        padding-left: 50px;
+        box-sizing: border-box;
+      }
+      .con-2-1-right img {
+        width: 95%;
+      }
+      .con-2-1-right-1,
+      .con-2-1-right-3 {
+        position: relative;
+      }
+      .img-1,
+      .img-3 {
+        position: absolute;
+      }
+      .img-2 {
+        position: absolute;
+        top: 20px;
+      }
+      .img-4 {
+        position: absolute;
+        top: 475px;
+      }
+      .empty-1 {
+        width: 100%;
+        height: 35px;
+      }
+      .empty-2 {
+        width: 100%;
+        height: 300px;
+      }
+      .con-3 {
+        margin: auto;
+        width: 96%;
+        height: 50px;
+        font-size: 12px;
+        color: rgb(91, 89, 89);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .con-5 {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 940px;
+        height: 200px;
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .con-6 {
+        margin: auto;
+        width: 90%;
+      }
+      .con-6 img {
+        width: 100%;
+      }
+      .con-7 {
+        height: 700px;
+      }
+      .con-7-1 {
+        margin: auto;
+        height: 680px;
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-7-1-left {
+        height: 500px;
+        width: 470px;
+        padding-top: 150px;
+      }
+      .con-7-1-left h1 {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        margin: 0;
+      }
+      .con-7-1-left p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .con-7-1-left a {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #25d366;
+      }
+      .con-7-1-left a:hover {
+        color: #25d366;
+      }
+      .con-7-1-right {
+        margin-right: 100px;
+      }
+      .con-8 {
+        height: 750px;
+        width: 100%;
+        margin-bottom: 100px;
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con-8-1 {
+        margin: auto;
+        height: 700px;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .con-8-1-right {
+        width: 470px;
+        height: 300px;
+        color: white;
+      }
+      .con-8-1-right h1 {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        margin: 0;
+      }
+      .con-8-1-right h1 span {
+        color: #25d366;
+      }
+      .con-8-1-right p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .con-8-1-right a {
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #25d366;
+      }
+      .con-8-1-right a:hover {
+        color: #25d366;
+      }
+      .con-9 {
+        height: 700px;
+        margin-bottom: 100px;
+      }
+      .con-9-1 {
+        margin: auto;
+        height: 680px;
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-9-1-left {
+        height: 500px;
+        width: 470px;
+        padding-top: 150px;
+      }
+      .con-9-1-left h1 {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        margin: 0;
+      }
+      .con-9-1-left p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .con-9-1-left a {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #25d366;
+      }
+      .con-9-1-left a:hover {
+        color: #25d366;
+      }
+      .con-9-1-right {
+        width: 300px;
+        height: 600px;
+        margin-right: 100px;
+        position: relative;
+      }
+      .img-5 {
+        position: absolute;
+      }
+      .img-6 {
+        top: 80px;
+        left: -50px;
+        position: absolute;
+      }
+      .con-10 {
+        height: 750px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con-10-1 {
+        margin: auto;
+        height: 700px;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .con-10-1-left {
+        width: 300px;
+        height: 600px;
+        position: relative;
+      }
+      .img-7 {
+        position: absolute;
+      }
+      .img-8 {
+        top: 180px;
+        width: 110%;
+        position: absolute;
+      }
+      .con-10-1-right {
+        width: 470px;
+        height: 300px;
+      }
+      .con-10-1-right h1 {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        margin: 0;
+      }
+      .con-10-1-right p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .con-10-1-right a {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #25d366;
+      }
+      .con-10-1-right a:hover {
+        color: #25d366;
+      }
+      .con-11 {
+        margin-top: 70px;
+        height: 500px;
+        width: 100%;
+        background-color: rgb(18, 25, 31);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con-11-1 {
+        width: 1100px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-11-1-1 {
+        margin-top: 50px;
+        width: 97%;
+        height: 230px;
+        display: flex;
+        gap: 80px;
+      }
+      .con-11-1-1 div {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+      }
+      .con-11-1-1-1 {
+        width: 18%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-11-1-1-1 img {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 80%;
+      }
+      .con-11-1-1-1 a {
+        width: fit-content;
+        background-color: #25d366;
+        padding: 16px 25px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+      .con-11-1-1-2 {
+        justify-content: space-evenly;
+        margin-right: 10px;
+      }
+      .con-11-1-1-2 p {
+        margin-top: 0;
+        font-size: 12px;
+        color: white;
+      }
+      .con-11-1-1-2 a {
+        color: white;
+        font-size: 18px;
+      }
+      .con-11-1-1-2 a:hover {
+        text-decoration: underline;
+      }
+      .con-11-1-2 {
+        border-top: 1px solid rgba(128, 128, 128, 0.644);
+        color: white;
+        width: 97%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+      }
+      .con-11-1-2-1 {
+        width: 10%;
+        font-size: 12px;
+      }
+      .con-11-1-2-2 {
+        width: 15%;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-11-1-2-2 a {
+        color: white;
+      }
+      .con-11-1-2-3 {
+        display: flex;
+        gap: 20px;
+      }
+      .icons {
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid rgb(245, 244, 244);
+        border-radius: 50%;
+      }
+      .icons i {
+        font-size: 18px;
+      }
+      .con-11-1-2-4 select {
+        width: 220px;
+        padding: 15px 20px;
+        margin-left: 130px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .con-11-1-2-4 select option {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con-1">
+      <div class="con-1-1">
+        <img
+          src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg"
+          alt=""
+          class="logo"
+        />
+      </div>
+      <div class="con-1-2">
+        <a href="">Features <i class="fa-solid fa-angle-down"></i></a>
+        <a href="">Privacy</a>
+        <a href="">Help Center</a>
+        <a href="">Blog</a>
+        <a href="">For Business</a>
+        <a href="">WhatsApp Web</a>
+        <a href="">Download</a>
+      </div>
+      <div class="con-1-3">
+        <a href="">Download&emsp;<i class="fa-solid fa-download"></i></a>
+      </div>
+    </div>
+    <div class="empty"></div>
+    <div class="con-2">
+      <div class="con-2-1">
+        <div class="con-2-1-left">
+          <h1>Message privately</h1>
+          <p>
+            Simple, reliable, private messaging and calling for free*, available
+            all over the world.
+          </p>
+          <div class="con-2-1-left-1">
+            <a href="">Download&emsp;<i class="fa-solid fa-download"></i></a>
+            <a href="">Log in&emsp;<i class="fa-solid fa-angle-down"></i></a>
+          </div>
+        </div>
+        <div class="con-2-1-right">
+          <div class="con-2-1-right-1">
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/329792464_534173148815054_3736500652022655929_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=kHdXIGKbZHoQ7kNvgGsgT2M&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIE7xhR-9xjx-gsAkj5zmpZ-EWObgQjQmrwL-qvFLB9Tm&oe=6722E203"
+              alt=""
+              class="img-1"
+            />
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/326429760_565901131866976_8960223839941330956_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=upKSeJdhBugQ7kNvgHyuSC5&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIKVqqIpx96nusxn7P0_Bd3yS3UsfTRj9X4Lzei9Fw835&oe=6722FA88"
+              alt=""
+              class="img-2"
+            />
+          </div>
+          <div class="empty-1"></div>
+          <div class="con-2-1-right-2">
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/318567080_617695970110803_5923371384204745052_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=sv720OAfHnsQ7kNvgFlO2cY&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIAfWKtiBnEdIlQsIE2k460bbEamhw-XNjIKye8QVRz_c&oe=6722FFE6"
+              alt=""
+            />
+          </div>
+          <div class="con-2-1-right-3">
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/327063196_5800887573364035_3294745791563659576_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=YV5ox_CVnFcQ7kNvgH30Qiq&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIG3Ampq0MOoqBJ7UsCU6QL6Rwy_yLa9Sg7lay63UWKla&oe=67230A8E"
+              alt=""
+            />
+          </div>
+          <div class="con-2-1-right-4">
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/327713084_566495871797259_1779906837439389762_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=2wvK-tnnMD0Q7kNvgEwFvKU&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIOXZDdJW2aRWw409EAIt2Aqg0Le3DpCw7Dc1yJ4OEmjQ&oe=6723091B"
+              alt=""
+              class="img-3"
+            />
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/331324920_411994007808830_5458286697352087382_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=F1gqb6opGrIQ7kNvgFqDJHS&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIM0H2AwGJT5UNvYauafDp4ea7VuEutvwnKTK3u-hdr-v&oe=672303AA"
+              alt=""
+              class="img-4"
+            />
+          </div>
+          <div class="empty-2"></div>
+          <div class="con-2-1-right-5">
+            <img
+              src="https://scontent.whatsapp.net/v/t39.8562-34/323914620_1571722909934742_4947035793330347072_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=Rd0PeHA1BQkQ7kNvgFwMC9l&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=Ao8ArA0LeN80AZLQQSCrRzK&oh=01_Q5AaIKgubf8dQ0ZA9oK1YNp-HclUaKfZ2QGS0aI3n0xzeviV&oe=67230D48"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con-3">
+      * Data charges may apply. Contact your provider for details.
+    </div>
+    <div class="con-4">
+      <img
+        src="https://scontent.whatsapp.net/v/t39.8562-34/462067182_1276011330091528_8814370273400156670_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=mI7YEyO6I7wQ7kNvgG9_m2Y&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=An6kmrJuX5mwJkheCVzK7Hq&oh=01_Q5AaIH4aQbp8Bfdzf1z1zZedtA4ajcOIAMuv5UatqOvvDgfJ&oe=6725A66F"
+        alt=""
+      />
+    </div>
+    <div class="con-5">
+      With private messaging and calling, you can be yourself, speak freely and
+      feel close to the most important people in your life no matter where they
+      are.
+    </div>
+    <div class="con-6">
+      <img
+        src="https://scontent.whatsapp.net/v/t39.8562-34/315632381_5616928641708856_9210500231334849736_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=WR6yetR6hu0Q7kNvgFwX7PK&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=An6kmrJuX5mwJkheCVzK7Hq&oh=01_Q5AaIEkgnFV_X0nR69ojTGklwOEgzWjaICazy9XgN3XlktPz&oe=672572CD"
+        alt=""
+      />
+    </div>
+    <div class="con-7">
+      <div class="con-7-1">
+        <div class="con-7-1-left">
+          <h1>Never miss a moment with voice and video calls</h1>
+          <p>
+            From a group call to classmates to a quick call with mom, feel like
+            you’re in the same room with voice and video calls.
+          </p>
+          <a href="">Learn more&emsp;<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        <div class="con-7-1-right">
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/316211879_640016534274402_8272733547019635528_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=rC-YmSQLZRMQ7kNvgGc5_O8&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=An6kmrJuX5mwJkheCVzK7Hq&oh=01_Q5AaIFE4artuLvQHqcVAFRPl56PvMX3KtcttiSATdGkrjGRZ&oe=67259AD6"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="con-8">
+      <div class="con-8-1">
+        <div class="con-8-1-left">
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/316036583_870096634427722_4468595013887544943_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=dE3-IOcq_XAQ7kNvgGZadMp&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=An6kmrJuX5mwJkheCVzK7Hq&oh=01_Q5AaIKDCJlGFC0EsjCgiFwOnySzrOHjuAOooPstbQF-4mkpf&oe=672592B1"
+            alt=""
+          />
+        </div>
+        <div class="con-8-1-right">
+          <h1>Speak<br /><span>freely</span></h1>
+          <p>
+            With end-to-end encryption, your personal messages and calls are
+            secured. Only you and the person you're talking to can read or
+            listen to them, and nobody in between, not even WhatsApp.
+          </p>
+          <a href="">Learn more&emsp;<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="con-9">
+      <div class="con-9-1">
+        <div class="con-9-1-left">
+          <h1>Keep in touch with your groups</h1>
+          <p>
+            Whether it's planning an outing with friends or simply staying on
+            top of your family chats, group conversations should feel effortless
+          </p>
+          <a href="">Learn more&emsp;<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        <div class="con-9-1-right">
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/318716844_644367477472796_6799212725643495984_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=QjdkmfFSDS4Q7kNvgFdqirD&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AuhjMuP5KhjFgxqUWOTblws&oh=01_Q5AaICZ3Ap0Wz6aa7EF6t1ACiz5ko207WKzP83IkY4ox1-k8&oe=6727DD65"
+            alt=""
+            class="img-5"
+          />
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/318759416_815630979518701_2490140615586319278_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=8pHKxtp8MssQ7kNvgHIuF6I&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AuhjMuP5KhjFgxqUWOTblws&oh=01_Q5AaIAv9aOZJWs6h1ahtje6cZ9FagIgUnpLpSm2UD3cE0BNS&oe=6727E80D"
+            alt=""
+            class="img-6"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="con-10">
+      <div class="con-10-1">
+        <div class="con-10-1-left">
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/409964903_7655947307754468_3960711266215354357_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=N3gvAoiDmb8Q7kNvgEZvptL&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AuhjMuP5KhjFgxqUWOTblws&oh=01_Q5AaILDa5XiLe0JEuAaZWmxfZKrO3OdErgnIoUEZGLI3Mb87&oe=67280100"
+            alt=""
+            class="img-7"
+          />
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/311869879_1082331725759559_5382136804801289925_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=oqo0qHo44rkQ7kNvgGHT9wj&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AuhjMuP5KhjFgxqUWOTblws&oh=01_Q5AaIHkwAeNxsNqFw1OwRfOqe1mrmi42QPty0D2OgIK2NQji&oe=6727EB2F"
+            alt=""
+            class="img-8"
+          />
+        </div>
+        <div class="con-10-1-right">
+          <h1>Say what<br />you feel</h1>
+          <p>
+            Express yourself without words. Use stickers and GIFs or share
+            everyday moments on Status. Record a voice message for a quick hello
+            or a longer story.
+          </p>
+          <a href="">Learn more&emsp;<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="con-7">
+      <div class="con-7-1">
+        <div class="con-7-1-left">
+          <h1>Transform<br />your business</h1>
+          <p>
+            WhatsApp Business helps you reach your customers globally to deliver
+            compelling experiences at scale. Showcase your products and
+            services, increase sales, and build relationships all with WhatsApp.
+          </p>
+          <a href="">Learn more&emsp;<i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        <div class="con-7-1-right">
+          <img
+            src="https://scontent.whatsapp.net/v/t39.8562-34/329699257_2856843487782508_7800545505417662242_n.png?ccb=1-7&_nc_sid=73b08c&_nc_ohc=7ywqMh9gZTsQ7kNvgHx1OXZ&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=AuhjMuP5KhjFgxqUWOTblws&oh=01_Q5AaIMWhBJjNiMN32-IOje-0lRjXGDWimkvf3uNAVNFOU973&oe=6727DD1B"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="con-11">
+      <div class="con-11-1">
+        <div class="con-11-1-1">
+          <div class="con-11-1-1-1">
+            <img
+              src="https://static.whatsapp.net/rsrc.php/yA/r/hbGnlm1gXME.svg"
+              alt=""
+            />
+            <a href="">Download&emsp;<i class="fa-solid fa-download"></i></a>
+          </div>
+          <div class="con-11-1-1-2">
+            <p>What we do</p>
+            <a href="">Features</a>
+            <a href="">Blog</a>
+            <a href="">Security</a>
+            <a href="">For Business</a>
+          </div>
+          <div class="con-11-1-1-2">
+            <p>Who we are</p>
+            <a href="">About us</a>
+            <a href="">Careers</a>
+            <a href="">Brand Center</a>
+            <a href="">Privacy</a>
+          </div>
+          <div class="con-11-1-1-2">
+            <p>Use WhatsApp</p>
+            <a href="">Android</a>
+            <a href="">iPhone</a>
+            <a href="">Mac/PC</a>
+            <a href="">WhatsApp Web</a>
+          </div>
+          <div class="con-11-1-1-2">
+            <p>Need help?</p>
+            <a href="">Contact Us</a>
+            <a href="">Help Center</a>
+            <a href="">Apps</a>
+            <a href="">Security Advisories</a>
+          </div>
+        </div>
+        <div class="con-11-1-2">
+          <div class="con-11-1-2-1">2024 © WhatsApp LLC</div>
+          <div class="con-11-1-2-2">
+            <a href="">Terms & Privacy<br />Policy</a>
+            <a href="">Sitemap</a>
+          </div>
+          <div class="con-11-1-2-3">
+            <div class="icons"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+            <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+          </div>
+          <div class="con-11-1-2-4">
+            <select>
+              <option selected>English</option>
+              <option>తెలుగు</option>
+              <option>हिन्दी</option>
+              <option>ქართული ენა</option>
+              <option>اُردُو</option>
+              <option>ಕನ್ನಡ</option>
+              <option>മലയാളം</option>
+              <option>தமிழ்</option>
+              <option>français</option>
+              <option>español</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form>
+      <input type="" />
+    </form>
+  </body>
+</html>

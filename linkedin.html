@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn India: Log In or Sign Up</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Container-1 */
+      .con-1 {
+        height: 690px;
+      }
+      .con-1-1 {
+        width: 1500px;
+        height: 690px;
+        margin: auto;
+      }
+      .con-1-1-top {
+        width: 1200px;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .con-1-1-top-right {
+        padding: 40px;
+      }
+      .con-1-1-top-left {
+        padding: 0 30px;
+      }
+      .img-1 {
+        width: 100px;
+      }
+      .con-1-1-top-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .con-1-1-top-right-item,
+      .con-1-1-top-right-item-1 {
+        width: 65px;
+        padding: 7px 0;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        color: rgb(118, 117, 117);
+      }
+      .con-1-1-top-right-item-1 {
+        width: 95px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+      }
+      .con-1-1-top-right-item:hover,
+      .con-1-1-top-right-item-1:hover {
+        color: black;
+      }
+      i {
+        font-size: 20px;
+      }
+      .con-1-1-top-right-links a {
+        margin-left: 5px;
+        padding: 15px 25px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 50px;
+        text-decoration: none;
+      }
+      .con-1-1-top-right-links-1 {
+        border: 2px solid rgb(46, 110, 201);
+        color: rgb(46, 110, 201);
+      }
+      .con-1-1-top-right-links-1:hover {
+        background-color: rgba(131, 174, 234, 0.164);
+      }
+      .con-1-1-top-right-links-2 {
+        background-color: rgb(46, 110, 201);
+        color: white;
+      }
+      .con-1-1-top-right-links-2:hover {
+        background-color: rgb(13, 65, 138);
+      }
+      .con-1-1-bottom {
+        display: flex;
+      }
+      .con-1-1-bottom-left,
+      .con-1-1-bottom-right {
+        width: 50%;
+        height: 610px;
+        /* background-color: blanchedalmond; */
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        position: relative;
+      }
+      .login {
+        width: 550px;
+        height: 370px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .login a {
+        text-decoration: none;
+        font-weight: 500;
+        color: rgb(11, 103, 207);
+      }
+      .login-1 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 400;
+        color: rgb(77, 107, 105);
+      }
+      .img-3 {
+        width: 30px;
+        border-radius: 50%;
+      }
+      .login-2 {
+        width: 75%;
+        height: 40px;
+        /* font-size: 18px; */
+        color: rgb(83, 80, 80);
+        border: 2px solid gray;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-2:hover {
+        background-color: rgba(169, 169, 169, 0.18);
+      }
+      .login-3 {
+        width: 75%;
+        text-align: center;
+        font-size: 12px;
+        color: grey;
+      }
+      .login-3 a:hover,
+      .login-4 a:hover {
+        text-decoration: underline;
+      }
+      .login-4 {
+        width: 80%;
+        text-align: center;
+      }
+      .img-2 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 700px;
+      }
+
+      /* Container-2 */
+      .con-2 {
+        height: 300px;
+        background-color: rgb(240, 239, 239);
+      }
+      .con-2-1 {
+        width: 1200px;
+        height: 300px;
+        margin: auto;
+        display: flex;
+      }
+      .con-2-1-left {
+        width: 42%;
+        height: 300px;
+        padding: 60px 35px;
+        box-sizing: border-box;
+        line-height: 30px;
+      }
+      .con-2-1-right {
+        width: 58%;
+        height: 300px;
+        padding: 60px 30px;
+        box-sizing: border-box;
+      }
+      .con-2-1-left-1 {
+        font-size: 32px;
+      }
+      .con-2-1-left-2 {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .con-2-1-right a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        float: left;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(66, 65, 65);
+        font-weight: 500;
+      }
+      .con-2-1-right a:hover {
+        background-color: rgba(190, 186, 186, 0.413);
+      }
+      .con-2-1-right .a1 {
+        color: rgb(11, 103, 207);
+        border: 1px solid rgb(11, 103, 207);
+      }
+      .con-2-1-right .a1:hover {
+        background-color: rgba(145, 173, 205, 0.162);
+      }
+
+      /* Container-3 */
+      .con-3 {
+        height: 450px;
+      }
+      .con-3-1 {
+        width: 1200px;
+        height: 450px;
+        margin: auto;
+        display: flex;
+      }
+      .con-3-1-left {
+        width: 42%;
+        height: 450px;
+        padding: 60px 35px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        line-height: 40px;
+        font-size: 32px;
+      }
+      .con-3-1-right {
+        width: 58%;
+        height: 450px;
+        padding: 60px 30px;
+        box-sizing: border-box;
+      }
+      .con-3-1-right-top {
+        width: 100%;
+        height: 260px;
+      }
+      .con-3-1-right a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        float: left;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(66, 65, 65);
+        font-weight: 500;
+      }
+      .con-3-1-right a:hover {
+        background-color: rgba(190, 186, 186, 0.413);
+      }
+      .con-3-1-right-bottom .a1 {
+        padding: 7px 25px;
+        font-size: 14px;
+      }
+
+      /* Container-4 */
+      .con-4 {
+        height: 250px;
+        background-color: rgba(244, 211, 160, 0.221);
+      }
+      .con-4-1 {
+        margin: auto;
+        width: 1200px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .con-4-top {
+        font-size: 32px;
+        color: rgb(186, 49, 49);
+      }
+      .con-4-bottom a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(11, 103, 207);
+        border: 1px solid rgb(11, 103, 207);
+        font-weight: 500;
+      }
+      .con-4-bottom a:hover {
+        background-color: rgba(145, 173, 205, 0.162);
+      }
+
+      /* Container-5 */
+      .con-5 {
+        height: 400px;
+      }
+      .con-5-1 {
+        width: 1200px;
+        height: 400px;
+        margin: auto;
+        display: flex;
+      }
+      .con-5-1-left {
+        width: 42%;
+        height: 400px;
+        padding: 60px 35px;
+        box-sizing: border-box;
+        line-height: 30px;
+      }
+      .con-5-1-right {
+        width: 58%;
+        height: 300px;
+        padding: 60px 30px;
+        box-sizing: border-box;
+      }
+      .con-5-1-left-1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .con-5-1-left-2 {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .con-5-1-right a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        float: left;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(66, 65, 65);
+        font-weight: 500;
+      }
+      .con-5-1-right a:hover {
+        background-color: rgba(190, 186, 186, 0.413);
+      }
+      .con-5-1-right .a1 {
+        color: rgb(11, 103, 207);
+        border: 1px solid rgb(11, 103, 207);
+      }
+      .con-5-1-right .a1:hover {
+        background-color: rgba(145, 173, 205, 0.162);
+      }
+
+      /* Container-6 */
+      .con-6 {
+        height: 250px;
+      }
+      .con-6-1 {
+        width: 1200px;
+        height: 200px;
+        margin: auto;
+        display: flex;
+      }
+      .con-6-1-left {
+        width: 42%;
+        height: 200px;
+        padding: 40px 35px;
+        box-sizing: border-box;
+        line-height: 30px;
+      }
+      .con-6-1-right {
+        width: 58%;
+        height: 200px;
+        padding: 60px 30px;
+        padding-top: 80px;
+        box-sizing: border-box;
+      }
+      .con-6-1-left-1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .con-6-1-left-2 {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .con-6-1-right a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        float: left;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(66, 65, 65);
+        font-weight: 500;
+      }
+      .con-6-1-right a:hover {
+        background-color: rgba(190, 186, 186, 0.413);
+      }
+
+      /* Container-7 */
+      .con-7 {
+        height: 600px;
+        background-color: rgb(240, 239, 239);
+      }
+      .con-7-1 {
+        margin: auto;
+        height: 600px;
+        width: 1200px;
+        display: flex;
+        align-items: center;
+      }
+      .con-7-1-left {
+        height: 300px;
+        width: 55%;
+        padding: 60px 45px;
+        box-sizing: border-box;
+      }
+      .con-7-1-left-1 {
+        line-height: 40px;
+        font-size: 32px;
+        color: rgb(186, 49, 49);
+      }
+      .con-7-1-left-2 {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+      .con-7-1-right {
+        width: 40%;
+        height: 400px;
+      }
+      .img-4 {
+        width: 90%;
+      }
+      .con-7-1-icon {
+        height: 50px;
+        width: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(80, 79, 79);
+      }
+      .con-7-1-icon:hover {
+        background-color: black;
+      }
+      .con-7-1-icon i {
+        font-size: 20px;
+        color: white;
+      }
+
+      /* Container-8 */
+      .con-8 {
+        height: 720px;
+      }
+      .con-8-1 {
+        height: 720px;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+      }
+      .con-8-1-1 {
+        height: 500px;
+        width: 50%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .con-8-1-1 img {
+        width: 45%;
+      }
+      .con-8-1-top {
+        width: 80%;
+        line-height: 40px;
+        font-size: 32px;
+      }
+      .con-8-1-bottom-left a {
+        padding: 13px 25px;
+        border: 1px solid black;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(66, 65, 65);
+        font-weight: 500;
+      }
+      .con-8-1-bottom-right a {
+        padding: 17px 15px;
+        border: 1px solid rgba(128, 128, 128, 0.276);
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+      }
+      .con-8-1-1 a:hover {
+        background-color: rgba(190, 186, 186, 0.338);
+      }
+
+      /* Container-9 */
+      .con-9 {
+        height: 800px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .con-9-left {
+        width: 50%;
+        height: 700px;
+        background-color: rgb(240, 239, 239);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .con-9-left-content {
+        height: 350px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .con-9-left-content-top {
+        font-size: 32px;
+        color: rgb(186, 49, 49);
+      }
+      .con-9-left-content-mid {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+      .con-9-left-content-bottom {
+        height: 220px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .con-9-left-content-bottom div {
+        height: 65px;
+        width: 100%;
+        background-color: rgba(227, 215, 200, 0.336);
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      .con-9-left-content-bottom div:hover {
+        background-color: rgba(190, 186, 186, 0.338);
+      }
+      .con-9-right {
+        width: 50%;
+        height: 800px;
+      }
+      .img-5 {
+        height: 800px;
+        margin-left: 100px;
+      }
+
+      /* Container-10 */
+      .con-10 {
+        margin-top: 50px;
+        height: 720px;
+        background-color: rgba(195, 228, 241, 0.189);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+      }
+      .con-10-right {
+        height: 150px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .con-10-right-top {
+        font-size: 32px;
+      }
+      .con-10-right-bottom {
+        font-size: 20px;
+      }
+
+      /* Container-11 */
+      .con-11 {
+        margin-top: 100px;
+        height: 735px;
+        background-image: url("https://static.licdn.com/aero-v1/sc/h/4ezbw852t2wrgf27zl1o1qtu7");
+        background-size: cover;
+      }
+      .con-11-1 {
+        margin: auto;
+        width: 1100px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .con-11-top {
+        font-size: 50px;
+      }
+      .con-11-bottom a {
+        padding: 13px 25px;
+        margin: 5px 3px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+        background-color: rgb(11, 103, 207);
+      }
+      .con-11-bottom a:hover {
+        background-color: rgb(3, 78, 164);
+      }
+
+      /* Container-12 */
+      .con-12 {
+        background-color: rgba(227, 215, 200, 0.336);
+        background-color: rgb(240, 239, 239);
+        height: 410px;
+        display: flex;
+        align-items: center;
+      }
+      .con-12-1 {
+        height: 370px;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+      }
+      .con-12-1-box {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .con-12-1-box span {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .con-12-1-box a {
+        width: fit-content;
+        text-decoration: none;
+        color: rgb(86, 84, 84);
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .con-12-1-box a:hover {
+        color: rgb(8, 80, 186);
+        text-decoration: underline;
+      }
+
+      /* Container-13 */
+      .con-13 {
+        margin: auto;
+        width: 1200px;
+        height: 50px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 15px;
+      }
+      .con-13 a {
+        text-decoration: none;
+        color: rgb(86, 84, 84);
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .con-13 a:hover {
+        color: rgb(8, 80, 186);
+        text-decoration: underline;
+      }
+      .con-13 a i {
+        font-size: 14px;
+      }
+      .con-13-1 span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .con-13-1 i {
+        font-size: 15px;
+      }
+      .con-13-2 {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con-1">
+      <div class="con-1-1">
+        <div class="con-1-1-top">
+          <div class="con-1-1-top-left">
+            <a href=""
+              ><img
+                class="img-1"
+                src="https://freelogopng.com/images/all_img/1656958733linkedin-logo-png.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="con-1-1-top-right">
+            <div class="con-1-1-top-right-item">
+              <i class="fa-regular fa-newspaper"></i><br />Articles
+            </div>
+            <div class="con-1-1-top-right-item">
+              <i class="fa-solid fa-people-group"></i><br />
+              People
+            </div>
+            <div class="con-1-1-top-right-item">
+              <i class="fa-solid fa-chalkboard"></i><br />Learning
+            </div>
+            <div class="con-1-1-top-right-item">
+              <i class="fa-solid fa-briefcase"></i><br />Jobs
+            </div>
+            <div class="con-1-1-top-right-item">
+              <i class="fa-solid fa-puzzle-piece"></i><br />Games
+            </div>
+            <div class="con-1-1-top-right-item-1">
+              <i class="fa-solid fa-laptop"></i><br />Get the app
+            </div>
+            <div class="con-1-1-top-right-links">
+              <a class="con-1-1-top-right-links-1" href="">Sign in</a>
+              <a class="con-1-1-top-right-links-2" href="">Join now</a>
+            </div>
+          </div>
+        </div>
+        <div class="con-1-1-bottom">
+          <div class="con-1-1-bottom-left">
+            <div class="login">
+              <div class="login-1">Welcome to your professional community</div>
+              <a href=""
+                ><div class="login-2">
+                  <img
+                    src="https://image.similarpng.com/very-thumbnail/2021/09/Logo-Search-Google--on-transparent-background-PNG.png"
+                    alt=""
+                    class="img-3"
+                  />&ensp;Continue with Google
+                </div></a
+              >
+              <a href=""><div class="login-2">Sign in with email</div></a>
+              <div class="login-3">
+                By clicking Continue to join or sign in, you agree to LinkedIn’s
+                <a href="">User Agreement</a>, <a href="">Privacy Policy</a>,
+                and <a href="">Cookie Policy</a>.
+              </div>
+              <div class="login-4">
+                New to LinkedIn? <a href="">Join now</a>
+              </div>
+            </div>
+          </div>
+          <div class="con-1-1-bottom-right">
+            <img
+              class="img-2"
+              src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con-2">
+      <div class="con-2-1">
+        <div class="con-2-1-left">
+          <div class="con-2-1-left-1">Explore collaborative articles</div>
+          <div class="con-2-1-left-2">
+            We’re unlocking community knowledge in a new way. Experts add
+            insights directly into each article, started with the help of AI.
+          </div>
+        </div>
+        <div class="con-2-1-right">
+          <a href="">Marketing</a>
+          <a href="">Public Administration</a>
+          <a href="">Healthcare</a>
+          <a href="">Engineering</a>
+          <a href="">IT Services</a>
+          <a href="">Sustainability</a>
+          <a href="">Business Administration</a>
+          <a href="">Telecommunications</a>
+          <a href="">HR Management</a>
+          <a href="" class="a1">Show all</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-3">
+      <div class="con-3-1">
+        <div class="con-3-1-left">Find the right job or internship for you</div>
+        <div class="con-3-1-right">
+          <div class="con-3-1-right-top">
+            <a href="">Engineering</a>
+            <a href="">Business Development</a>
+            <a href="">Finance</a>
+            <a href="">Administrative Assistant</a>
+            <a href="">Retail Associate</a>
+            <a href="">Customer Service</a>
+            <a href="">Operations</a>
+            <a href="">Information Technology</a>
+            <a href="">Marketing</a>
+            <a href="">Human Resources</a>
+          </div>
+          <div class="con-3-1-right-bottom">
+            <a href="" class="a1"
+              >Show more <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con-4">
+      <div class="con-4-1">
+        <div class="con-4-top">Post your job for millions of people to see</div>
+        <div class="con-4-bottom">
+          <a href="">Post a job</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-5">
+      <div class="con-5-1">
+        <div class="con-5-1-left">
+          <div class="con-5-1-left-1">Discover the best software tools</div>
+          <div class="con-5-1-left-2">
+            Connect with buyers who have first-hand experience to find the best
+            products for you.
+          </div>
+        </div>
+        <div class="con-5-1-right">
+          <a href="">E-Commerce Platforms</a>
+          <a href="">CRM Software</a>
+          <a href="">Human Resources Management Systems</a>
+          <a href="">Recruiting Software</a>
+          <a href="">Sales Intelligence Software</a>
+          <a href="">Project Management Software</a>
+          <a href="">Help Desk Software</a>
+          <a href="">Social Networking Software</a>
+          <a href="">Desktop Publishing Software</a>
+          <a href="" class="a1">Show all</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-6">
+      <div class="con-6-1">
+        <div class="con-6-1-left">
+          <div class="con-6-1-left-1">Keep your mind sharp with games</div>
+          <div class="con-6-1-left-2">
+            Take a break and reconnect with your network through quick daily
+            games.
+          </div>
+        </div>
+        <div class="con-6-1-right">
+          <a href="">Pinpoint</a>
+          <a href="">Queens</a>
+          <a href="">Crossclimb</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-7">
+      <div class="con-7-1">
+        <div class="con-7-1-left">
+          <div class="con-7-1-left-1">
+            Let the right people know you’re open to work
+          </div>
+          <div class="con-7-1-left-2">
+            With the Open To Work feature, you can privately tell recruiters or
+            publicly share with the LinkedIn community that you are looking for
+            new job opportunities.
+          </div>
+        </div>
+        <div class="con-7-1-right">
+          <img
+            class="img-4"
+            src="https://static.licdn.com/aero-v1/sc/h/dbvmk0tsk0o0hd59fi64z3own"
+            alt=""
+          />
+        </div>
+        <div class="con-7-1-icon"><i class="fa-solid fa-angle-right"></i></div>
+      </div>
+    </div>
+    <div class="con-8">
+      <div class="con-8-1">
+        <div class="con-8-1-1">
+          <img
+            src="https://static.licdn.com/aero-v1/sc/h/43h6n82li4xu0q23s8jqizk6j"
+            alt=""
+          />
+          <div class="con-8-1-top">Connect with people who can help</div>
+          <div class="con-8-1-bottom-left">
+            <a href="">Find people you know</a>
+          </div>
+        </div>
+        <div class="con-8-1-1">
+          <img
+            src="https://static.licdn.com/aero-v1/sc/h/1dhh8rr3wohexkaya6jhn2y8j"
+            alt=""
+          />
+          <div class="con-8-1-top">Learn the skills you need to succeed</div>
+          <div class="con-8-1-bottom-right">
+            <a href=""
+              >Choose a topic to learn about &emsp;&emsp;
+              <i class="fa-solid fa-caret-down"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con-9">
+      <div class="con-9-left">
+        <div class="con-9-left-content">
+          <div class="con-9-left-content-top">Who is LinkedIn for?</div>
+          <div class="con-9-left-content-mid">
+            Anyone looking to navigate their professional life.
+          </div>
+          <div class="con-9-left-content-bottom">
+            <div>
+              <span>Find a coworker or classmate</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>Find a new job</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>Find a course or training</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con-9-right">
+        <img
+          class="img-5"
+          src="https://static.licdn.com/aero-v1/sc/h/eghb2zc0p5s2x42wbi80w4v8a"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="con-10">
+      <iframe
+        width="530"
+        height="378"
+        src="https://www.youtube.com/embed/IlYUUN8rL_Y"
+        title="Gayatri Iyer: In it to chase my dream | #InItTogether"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <div class="con-10-right">
+        <div class="con-10-right-top">In it to chase my dream</div>
+        <div class="con-10-right-bottom">
+          Check out Gayatri’s story of finding a new job on LinkedIn
+        </div>
+      </div>
+    </div>
+    <div class="con-11">
+      <div class="con-11-1">
+        <div class="con-11-top">
+          Join your colleagues, classmates, and friends on LinkedIn.
+        </div>
+        <div class="con-11-bottom">
+          <a href="">Get started</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-12">
+      <div class="con-12-1">
+        <div class="con-12-1-box">
+          <div class="con-1-1-top-left">
+            <a href=""
+              ><img
+                class="img-1"
+                src="https://freelogopng.com/images/all_img/1656958733linkedin-logo-png.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="con-12-1-box">
+          <span>General</span>
+          <a href="">Sign Up</a>
+          <a href="">Help Center</a>
+          <a href="">About</a>
+          <a href="">Press</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+          <a href="">Developers</a>
+        </div>
+        <div class="con-12-1-box">
+          <span>Browse LinkedIn</span>
+          <a href="">Learning</a>
+          <a href="">Jobs</a>
+          <a href="">Games</a>
+          <a href="">Salary</a>
+          <a href="">Mobile</a>
+          <a href="">Services</a>
+          <a href="">Products</a>
+          <a href="">Top Companies Hub</a>
+        </div>
+        <div class="con-12-1-box">
+          <span>Business Solutions</span>
+          <a href="">Talent</a>
+          <a href="">Marketing</a>
+          <a href="">Sales</a>
+          <a href="">Learning</a>
+        </div>
+        <div class="con-12-1-box">
+          <span>Directories</span>
+          <a href="">Members</a>
+          <a href="">Jobs</a>
+          <a href="">Companies</a>
+          <a href="">Featured</a>
+          <a href="">Learning</a>
+          <a href="">Posts</a>
+          <a href="">Articles</a>
+          <a href="">Schools </a>
+          <a href="">News</a>
+          <a href="">News Letters</a>
+          <a href="">Services</a>
+          <a href="">Products</a>
+          <a href="">Advice</a>
+          <a href="">People Search</a>
+        </div>
+      </div>
+    </div>
+    <div class="con-13">
+      <div class="con-13-1">
+        <span>Linked</span> <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="con-13-2">&copy;2024</div>
+      <a href="">About</a>
+      <a href="">Accessibility</a>
+      <a href="">User Agreement</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Cookie Policy</a>
+      <a href="">Copyright Policy</a>
+      <a href="">Brand Policy</a>
+      <a href="">Guest Controls</a>
+      <a href="">Community Guidelines</a>
+      <a href="" class="link-1"
+        >Language <i class="fa-solid fa-chevron-down"></i
+      ></a>
+    </div>
+  </body>
+</html>

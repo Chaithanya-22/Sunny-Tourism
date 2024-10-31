@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login • Istagram</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      .con-1 {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+      .con-1-1 {
+        height: 400px;
+        width: 350px;
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        padding: 15px 25px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .img-3 {
+        width: 60%;
+      }
+      .con-1-1 input {
+        width: 90%;
+        height: 40px;
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        background-color: rgba(128, 128, 128, 0.05);
+        border-radius: 5px;
+        font-size: 12px;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      .log-in {
+        width: 90%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(94, 169, 239);
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      .or {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .or-1 {
+        width: 40%;
+        border-top: 1px solid rgba(128, 128, 128, 0.493);
+      }
+      .face-book {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .face-book img {
+        width: 15px;
+      }
+      .face-book a {
+        color: rgb(19, 69, 155);
+        font-weight: 600;
+      }
+      .forget {
+        color: black;
+        font-size: 14px;
+        font-weight: 200;
+      }
+      .con-1-2 {
+        height: 70px;
+        width: 350px;
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .con-1-2 a {
+        color: rgb(73, 165, 252);
+        font-weight: bold;
+      }
+      .con-1-4 {
+        height: 90px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .img-1 {
+        width: 40%;
+        height: 45px;
+      }
+      .img-2 {
+        width: 35%;
+        height: 45px;
+      }
+
+      .con-2 {
+        margin: auto;
+        width: 55%;
+        height: 10vh;
+      }
+      .con-2 a {
+        color: grey;
+      }
+      .con-2 a:hover {
+        text-decoration: underline;
+      }
+      .con-2-top {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 14px;
+      }
+      .con-2-bottom {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 20px;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con-1">
+      <div class="con-1-1">
+        <img
+          class="img-3"
+          src="https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
+          alt=""
+        />
+        <input type="text" placeholder="Phone number, username, or email" />
+        <input type="password" placeholder="Password" />
+        <a href="" class="log-in">Log in</a>
+        <div class="or">
+          <div class="or-1"></div>
+          <div class="or-or">or</div>
+          <div class="or-1"></div>
+        </div>
+        <div class="face-book">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKrFhY-ljA-u7J5IMWeTv8zmpBx4PP9nQMw&s"
+            alt=""
+          />
+          <a href="">Log in with Facebook</a>
+        </div>
+        <a class="forget" href="">Forgot password?</a>
+      </div>
+      <div class="con-1-2">
+        <span>Don't have an account?</span> <a href=""> Sign up</a>
+      </div>
+      <div class="con-1-3">Get the app.</div>
+      <div class="con-1-4">
+        <img
+          class="img-1"
+          src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+          alt=""
+        />
+        <img
+          class="img-2"
+          src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="con-2">
+      <div class="con-2-top">
+        <a href="">Meta</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Jobs</a>
+        <a href="">Help</a>
+        <a href="">API</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Locations</a>
+        <a href="">Instagram Lite</a>
+        <a href="">Threads</a>
+        <a href="">Contact Uploading & Non-Users</a>
+        <a href="">Meta Verified</a>
+      </div>
+      <div class="con-2-bottom">
+        <a href="">English <i class="fa-solid fa-chevron-down"></i></a>
+        <span>&copy; 2024 Instagram from Meta</span>
+      </div>
+    </div>
+  </body>
+</html>
